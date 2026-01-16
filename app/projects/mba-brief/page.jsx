@@ -1,5 +1,7 @@
 "use client";
 
+import { Container } from "./components/Container";
+
 const navItems = [
   { id: "features", label: "Features" },
   { id: "testimonials", label: "Proof" },
@@ -48,10 +50,6 @@ const pricingPlans = [
     featured: false,
   },
 ];
-
-function Container({ children }) {
-  return <div className="mx-auto w-full max-w-6xl px-5 sm:px-8">{children}</div>;
-}
 
 function Navbar() {
   return (
