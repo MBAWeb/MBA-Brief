@@ -6,6 +6,7 @@ import { Hero } from "./components/Hero";
 import { FeaturesGrid } from "./components/FeaturesGrid";
 import { StatsRow } from "./components/StatsRow";
 import { PricingCards } from "./components/PricingCards";
+import { FinalCTA } from "./components/FinalCTA";
 
 const navItems = [
   { id: "features", label: "Features" },
