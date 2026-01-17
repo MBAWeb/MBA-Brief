@@ -1,6 +1,7 @@
 "use client";
 
 import { Container } from "./components/Container";
+import { Navbar } from "./components/Navbar";
 
 const navItems = [
   { id: "features", label: "Features" },
@@ -50,39 +51,6 @@ const pricingPlans = [
     featured: false,
   },
 ];
-
-function Navbar() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/60 backdrop-blur">
-      <Container>
-        <div className="flex h-16 items-center justify-between">
-          <a href="#top" className="font-semibold tracking-tight">
-            MBA Brief
-          </a>
-
-          <nav className="hidden items-center gap-6 sm:flex">
-            {navItems.map((item) => (
-              <a
-                key={item.id}
-                href={`#${item.id}`}
-                className="text-sm text-white/70 hover:text-white"
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-
-          <a
-            href="#cta"
-            className="rounded-lg bg-white px-4 py-2 text-sm font-medium text-black hover:bg-white/90"
-          >
-            Try it free
-          </a>
-        </div>
-      </Container>
-    </header>
-  );
-}
 
 function Hero() {
   return (
@@ -406,9 +374,9 @@ function PlaceholderSection({ id, title, text }) {
 export default function Page() {
   return (
     <main className="min-h-screen bg-black text-white">
-      <Navbar />
+      
+      <Navbar navItems={navItems} />
       <Hero />
-
       <FeaturesGrid />
       <StatsRow />
       <PricingCards />
