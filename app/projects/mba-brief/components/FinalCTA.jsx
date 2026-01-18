@@ -23,11 +23,11 @@ export function FinalCTA() {
                 type="email"
                 required
                 placeholder="you@example.com"
-                className="h-12 flex-1 rounded-xl border border-white/10 bg-black/40 px-4 text-sm text-white placeholder:text-white/40 outline-none ring-0 focus:border-white/25"
+                className="h-12 flex-1 rounded-xl border border-white/10 bg-black/40 px-4 text-sm text-white placeholder:text-white/40 outline-none focus:border-white/25 focus-visible:ring-2 focus-visible:ring-white/30 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               />
               <button
                 type="submit"
-                className="h-12 rounded-xl bg-white px-5 text-sm font-medium text-black hover:bg-white/90"
+                className="h-12 rounded-xl bg-white px-5 text-sm font-medium text-black hover:bg-white/90 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/40 focus-visible:ring-offset-2 focus-visible:ring-offset-black"
               >
                 Join the waitlist
               </button>

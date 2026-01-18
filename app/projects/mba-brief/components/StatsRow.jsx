@@ -17,7 +17,7 @@ export function StatsRow({ stats }) {
           <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {stats.map((s) => (
               <div key={s.label} className="rounded-xl border border-white/10 bg-black/30 p-5">
-                <p className="text-2xl font-semibold">{s.value}</p>
+                <p className="text-xl font-semibold sm:text-2xl">{s.value}</p>
                 <p className="mt-1 text-sm text-white/70">{s.label}</p>
               </div>
             ))}

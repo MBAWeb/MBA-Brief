@@ -24,7 +24,7 @@ export function Navbar({ navItems }) {
           <div className="flex items-center gap-3">
             <a
               href="#pricing"
-              className="rounded-xl border border-white/15 px-4 py-2 text-sm font-medium text-white/90 transition hover:border-white/30 hover:text-white"
+              className="hidden rounded-xl border border-white/15 px-4 py-2 text-sm font-medium text-white/90 transition hover:border-white/30 hover:text-white sm:inline-flex"
             >
               See pricing
             </a>

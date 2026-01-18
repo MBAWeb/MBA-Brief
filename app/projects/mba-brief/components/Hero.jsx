@@ -19,17 +19,17 @@ export function Hero() {
               steps—so you can move faster.
             </p>
 
-            <div className="mt-7 flex flex-wrap items-center gap-3">
+            <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
               <a
                 href="#cta"
-                className="rounded-xl bg-white px-5 py-3 text-sm font-medium text-black hover:bg-white/90"
+                className="w-full rounded-xl bg-white px-5 py-3 text-sm font-medium text-black hover:bg-white/90 sm:w-auto"
               >
                 Try it free
               </a>
 
               <a
                 href="#demo"
-                className="rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white hover:bg-white/10"
+                className="w-full rounded-xl border border-white/15 bg-white/5 px-5 py-3 text-sm font-medium text-white hover:bg-white/10 sm:w-auto"
               >
                 View demo
               </a>

@@ -17,7 +17,7 @@ export function PricingCards({ pricingPlans }) {
           {pricingPlans.map((plan) => (
             <div
               key={plan.name}
-              className="rounded-2xl border border-white/10 bg-white/5 p-6"
+              className="rounded-2xl border border-white/10 bg-white/5 p-6 transition hover:border-white/20 hover:bg-white/10"
             >
               <div className="flex items-start justify-between gap-4">
                 <div>
